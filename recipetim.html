@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept Tim</title>
+
+    <link rel="stylesheet" href="css/recipe.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="recipetim.js"></script>
+    <script src="script.js"></script>
+    <script>
+        let currentSite = 'linktim';
+        function addHeaderStyling(){
+            console.log('Wird ausgeführt');
+            document.getElementById(currentSite).classList.add('links-styled');
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="includeHTML()">
+    <div class="header" w3-include-html="header.html">
+    </div>
+
+    <h1 class="T-header paddingleftright">Griechischer Bauernsalat</h1>
+    <div class="paddingleftright"><img src="img/salad.jpg" class="T-food-img"></div>
+    <div class="T-tags paddingleftright">
+        <div class="T-tag">
+            <img class="logo" src="img/time.png">
+            <span> 15 Min.</span>
+        </div>
+        <div class="T-tag">
+            <img class="logo" src="img/brain.png">
+            <span>simple</span>
+        </div>
+        <div class="T-tag">
+            <img class="logo" src="img/calendar.png">
+            <span>28.09.2020</span>
+        </div>
+    </div>
+    <div class="border-line"></div>
+
+    <div class="multiplier-div paddingleftright">
+        <span>Zutaten für </span><input type="number" id="multiplier" placeholder="4">
+        <div class="button-recipe" onclick="calculate(4)">Portionen</div>
+    </div>
+
+    <ul class="paddingleftright">
+        <li class="bg0">
+            <span id="1">1</span> Salzgurke(n)
+        </li>
+        <li class="bg1">
+            <span id="2">2</span> Paprikaschoten, rot und grün
+        </li>
+        <li class="bg0">
+            <span id="3">500</span>g Tomate(n)
+        </li>
+        <li class="bg1">
+            <span id="4">2</span> Zwiebel(n)
+        </li>
+        <li class="bg0">
+            <span id="5">200</span>g Schafskäse
+        </li>
+        <li class="bg1">
+            <span id="6">1</span> Glas Oliven (1 Glas sind ca. 100g)
+        </li>
+        <li class="bg0">Salz und Pfeffer</li>
+        <li class="bg1">
+            <span id="7">1</span> Zitrone
+        </li>
+        <li class="bg0">
+            <span id="8">125</span>ml Olivenöl
+        </li>
+        <li class="bg1">Oregano</li>
+    </ul>
+
+    <div class="zubereitung paddingleftright">
+        <h2>Zubereitung</h2>
+        <div class="T-tag2">
+            <div class="T-tag">
+                <img class="shortslogo" src="">ca. 15 Minuten
+            </div>
+            <div class="T-tag">
+                <img class="shortslogo" src="">Gesamtzeit ca. 20 Minuten
+            </div>
+        </div>
+        <p>Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden. Paprika waschen, entkernen und in dünne Streifen schneiden. Tomaten
+            waschen und acteln. Zwiebeln schälen und in feine Ringe schneiden. Schafskäse würfeln und mit Oregano bestreuen. Oliven abgießen und 
+            mit Gurke, Paprika, Tomaten, Zwiebeln und Schafskäse in eine Schüssel geben. Olivenöl, Zitronensaft, Salz und Pfeffer zu einer Sauce
+            verrühren und über den Salat gießen. Umrühren. </p>
+
+        <h3>Rezept erstellt von</h3>
+        <div class="author">
+            <img src="img/cook-icon.png">
+            <span>Tim</span>
+        </div>
+    </div>
+
+    <div class="footer" w3-include-html="footer.html">
+    </div>
+</body>
+
+</html>

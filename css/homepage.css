@@ -1,0 +1,251 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Raleway;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding {
+    padding-left: 128px;
+    padding-right: 128px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+
+/* Start section 1:*/
+
+.home-section1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.home-section1 img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.text-grey {
+    color: grey;
+    font-size: 0.9em;
+}
+
+.button-rezept {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    font-size: 0.85em;
+    margin-top: 50px;
+}
+
+
+/* End Start section 1:*/
+
+
+/*Start section 2:*/
+
+.home-section2 {
+    background-color: rgb(209, 204, 204);
+    padding-top: 32px;
+}
+
+.something-new-picture {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-image {
+    height: 250px;
+    width: 250px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.home-image1 {
+    height: 250px;
+    width: 250px;
+    border-radius: 7px;
+    object-fit: cover;
+    object-position: 0% 50%;
+}
+
+.home-image2 {
+    height: 250px;
+    width: 250px;
+    border-radius: 7px;
+    object-fit: cover;
+    object-position: 80% 50%;
+}
+
+.home-image4 {
+    height: 250px;
+    width: 400px;
+    border-radius: 7px;
+    object-fit: cover;
+    object-position: 80% 80%;
+}
+
+.home-image:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.home-image1:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.home-image2:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.home-image4:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+}
+
+.section2-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/*end Start section 2:*/
+
+
+/*Start section 3:*/
+
+.home-section3 {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+    gap: 30px;
+}
+
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.same-width {
+    width: 90vw;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+input {
+    margin-left: 0;
+    padding: 6px;
+    font-family: 'Raleway', sans-serif;
+}
+
+input:focus {
+    outline: unset;
+    border: 2px solid green;
+}
+
+textarea {
+    height: 80px;
+    padding: 6px;
+    font-family: 'Raleway', sans-serif;
+    resize: none;
+}
+
+textarea:focus {
+    outline: unset;
+    border: 2px solid green;
+}
+
+.success {
+    height: 60vh;
+}
+
+
+/*Start section 3:*/
+
+.hide {
+    display: none;
+}
+
+@media(min-width: 1500px) {
+    .max-width {
+        max-width: 1200px;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .home-section2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .something-new-picture {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1100px) {
+    .padding {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}
+
+@media(max-width: 950px) {
+    .padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media(max-width: 850px) {
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 600px) {
+    .hide-600 {
+        display: none;
+    }
+    .hide {
+        display: unset;
+        height: 80px;
+    }
+}
+
+@media(max-width: 460px) {
+    .hide-500 {
+        display: none;
+    }
+    .home-image4 {
+        height: 150px;
+        width: 280px;
+    }
+}

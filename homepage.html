@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt Raphael, Tim, Norman</title>
+    <script src="recipetim.js"></script>
+    <script src="script.js"></script>
+    <script>
+        let currentSite = 'linkhome';
+
+        function addHeaderStyling() {
+            console.log('Wird ausgeführt');
+            document.getElementById(currentSite).classList.add('links-styled');
+        }
+    </script>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="includeHTML()">
+
+    <div class="header" w3-include-html="header.html"></div>
+    <div class="center">
+        <div class="home-section1 padding max-width flex-column">
+            <img src="img/cake.jpg" class="image1-croissants">
+            <div class="text-section1 flex-column">
+                <h2>Saftiger Schokoladenkuchen</h2>
+                <p class="text-grey">
+                    Schmackhaften saftigen Schokoladenkuchen kann von nun an vom jedem auch zu Hause sehr einfach gebacken werden. Mit ca. 45 Minuten Aufwand kannst du ein wundervolles Treffen mit Kaffee und Kuchen zaubern.
+                </p>
+                <a href="recipenorman.html">
+                    <div class="button-rezept">Rezept öffnen</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-section2">
+
+        <h2 class="text-center">Lust auf was Neues?</h2>
+
+        <div class="something-new-picture max-width padding flex-column">
+            <div class="section2-child">
+                <a href="recipetim.html">
+                    <img class="home-image1" src="img/salad.jpg" alt="">
+                </a>
+                <p>Griechischer<br> Bauernsalat</p>
+            </div>
+
+            <div class="section2-child">
+                <a href="reciperaphael.html">
+                    <img class="home-image2" src="img/imgmeatball.jpg" alt="">
+                </a>
+                <p>Thunfisch-Frikadellen</p>
+            </div>
+
+            <div class="section2-child">
+                <a href="recipenorman.html">
+                    <img class="home-image" src="img/cake.jpg" alt="">
+                </a>
+                <p>Saftiger <br>Schokoladenkuchen</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="max-width">
+            <h2 class="text-center">Thunfisch vs Hackfleisch</h2>
+        </div>
+
+        <div class="home-section3 padding max-width flex-column">
+            <p>
+                Zur eiweißreichen, kostengünstigen und schnell-anzurichtenden Ernährung gehört auch die Frikadelle. Herkömmliche Frikadellen mit Hackfleisch lassen sich viel einfacher zu festen Bällen formen und haben ein geringes Risiko beim Zerfallen. Immer mehr Menschen
+                möchten jedoch auf Konsum von rotem Fleisch (Rind, Schwein, etc.) verzichten. Wer also einmal die ideale Mischung zwischen Thunfisch, Ei und beispielsweise Haferflocken herausgefunden hat, findet eine nochmal deutlich günstigere und gleichzeitig
+                geschmacklich hervorragende Alternative.
+            </p>
+
+            <a href="reciperaphael.html"><img class="home-image4" src="img/meatball2.jpg "></a>
+        </div>
+    </div>
+    <div class="footer" w3-include-html="footer.html">
+    </div>
+</body>
+
+</html>

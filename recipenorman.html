@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Norman</title>
+    <link rel="stylesheet" href="css/recipe.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="script.js"></script>
+    <script src="recipenorman.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="includeHTML()">
+    <div class="header" w3-include-html="header.html">
+    </div>
+    <h1 class="T-header paddingleftright">Saftiger Schokoladenkuchen</h1>
+    <div class="paddingleftright"><img src="img/cake.jpg" class="T-food-img"></div>
+    <div class="T-tags paddingleftright">
+        <div class="T-tag">
+            <img class="logo" src="img/time.png">
+            <span> 45-Min</span>
+        </div>
+        <div class="T-tag">
+            <img class="logo" src="img/brain.png">
+            <span>simple</span>
+        </div>
+        <div class="T-tag">
+            <img class="logo" src="img/calendar.png">
+            <span>15.03.2022</span>
+        </div>
+    </div>
+    <div class="border-line"></div>
+
+    <div class="multiplier-div padding">
+        <span>Zutaten für </span><input type="number" id="multiplier" placeholder="1">
+        <div class="button-recipe" onclick="calculate(1)">Kuchen</div>
+    </div>
+
+    <ul class="paddingleftright">
+        <li class="bg0">
+            <span id="1">150</span> g Butter, in Stücken und etwas mehr zum Einfetten
+        </li>
+        <li class="bg1">
+            <span id="2">6</span> Eier, getrennt
+        </li>
+        <li class="bg0">
+            <span id="3">1</span> Prise Salz
+        </li>
+        <li class="bg1">
+            <span id="4">200</span> g Zucker
+        </li>
+        <li class="bg0">
+            <span id="5">250</span>g Zartbitter-Schokolade, in kleinen Stücken
+        </li>
+        <li class="bg1">
+            <span id="6">50</span> g Mehl
+    </ul>
+
+    <div class="zubereitung paddingleftright">
+        <h2>Zubereitung</h2>
+        <div class="T-tag2">
+            <div class="T-tag">
+                <img class="shortslogo" src="">ca. 25 Minuten
+            </div>
+            <div class="T-tag">
+                <img class="shortslogo" src="">Gesamtzeit ca. 45 Minuten
+            </div>
+        </div>
+        <p>
+            Als erstes muss der Backofen auf 200°C vorgeheizt werden und die Springform (Ø 22 cm) eingefettet werden.
+            <br> Danach die Eier trennen, Eiweiß und Salz in eine Schüssel geben und steif schlagen.
+            <br> Anschließend 20 g Zucker zugeben und vermischen. Als nächstes wird dann der Eischnee in eine Schüssel umgefüllt.
+            <br> Danach werden dann die 180 g Zucker, Eigelb und Butter in eine Schüssel geben und aufgeschlagen. <br> Der nächste Schritt ist es die Schokolade zuzugeben und einige Sekunden zu warten, bis sie weich geworden ist und sie dann gut vermischen.
+            <br> Danach wird Mehl zugeben und untergehoben, die 7 Eischnee werden zugeben und untergeheben. Anschließend wird der Teig in die vorbereitete Kuchenform geben.
+            <br> Als letzten Schritt noch den Kuchen 10-15 Minuten (200°C) backen, 5 Minuten in der Form abkühlen lassen und warm oder kalt servieren und genießen <br>
+        </p> Rühraufsatz einsetzen. Eischnee zugeben und gut unterheben.
+
+        <h3>Rezept erstellt von</h3>
+        <div class="author">
+            <img src="img/cook-icon.png">
+            <span>Norman Rahmel</span>
+        </div>
+    </div>
+
+    <div class="footer" w3-include-html="footer.html">
+    </div>
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunfisch Frikadellen</title>
+
+    <link rel="stylesheet" href="css/recipe.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="recipeRK.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="includeHTML()">
+    <div class="header" w3-include-html="header.html">
+    </div>
+
+    <h1 class="T-header paddingleftright">Thunfisch-Frikadellen</h1>
+    <div class="paddingleftright"><img src="img/imgmeatball.jpg" class="T-food-img"></div>
+    <div class="T-tags paddingleftright">
+        <div class="T-tag">
+            <img class="logo" src="img/time.png">
+            <span> 15 Min.</span>
+        </div>
+        <div class="T-tag">
+            <img class="logo" src="img/brain.png">
+            <span>simple</span>
+        </div>
+        <div class="T-tag">
+            <img class="logo" src="img/calendar.png">
+            <span>28.09.2020</span>
+        </div>
+    </div>
+    <div class="border-line"></div>
+
+    <div class="multiplier-div paddingleftright">
+        <span>Zutaten für </span><input type="number" id="multiplier" placeholder="6">
+        <div class="button-recipe" onclick="calculate(6)">Frikadellen</div>
+    </div>
+
+    <ul class="paddingleftright">
+        <li class="bg0">
+            <span id="1">2</span> Dose(n) Thunfisch (Abtropfgewicht je 150g)
+        </li>
+        <li class="bg1">
+            <span id="2">2</span> Eier Größe M
+        </li>
+        <li class="bg0">
+            <span id="3">3</span> EL Semmelbrösel o. Haferflocken o. Weizenmehl
+        </li>
+        <li class="bg1">
+            <span id="4">0.5</span> Zwiebel(n)
+        </li>
+        <li class="bg0">
+            <span id="5">2</span> EL Senf
+        </li>
+        <li class="bg1">
+            <span id="6">1</span> TL Paprika Edelsüß
+        </li>
+        <li class="bg0">
+            <span id="7">1</span> TL Hackfleisch-Gewürz
+        </li>
+        <li class="bg1">
+            <span id="8">1</span> Prise(n) Salz
+        </li>
+        <li class="bg0">
+            <span id="9">1</span> Prisen(n) Pfeffer
+        </li>
+    </ul>
+
+    <div class="zubereitung paddingleftright">
+        <h2>Zubereitung</h2>
+        <div class="T-tag2">
+            <div class="T-tag">
+                <img class="shortslogo" src="">ca. 15 Minuten
+            </div>
+            <div class="T-tag">
+                <img class="shortslogo" src="">Gesamtzeit ca. 20 Minuten
+            </div>
+        </div>
+        <p>
+            Thunfisch (im eigenen Saft) abgießen. Bestenfalls in einem Sieb abtropfen lassen. Danach den Thunfisch zerkleinern und in eine Schüssel geben. Dazu die Eier hinzugeben, sowie die Haferflocken (o. Semmelbrösel etc.). Zwiebeln so klein wie möglich schneiden
+            und auch hinzugeben. Danach mit Salz, Pfeffer, Senf, Paprika edelsüß und Hackfleisch-Gewürz würzen und alles miteinander in der Schüssel verrühren.
+            <br>Währenddessen Herdplatte auf volle Stufe mit etwas Öl aufheizen und bei mittlerer Stufe von beiden Seiten anbraten.</p>
+
+        <h3>Rezept erstellt von</h3>
+        <div class="author">
+            <img src="img/cook-icon.png">
+            <span>Raphael</span>
+        </div>
+    </div>
+
+    <div class="footer" w3-include-html="footer.html">
+    </div>
+</body>
+
+</html>

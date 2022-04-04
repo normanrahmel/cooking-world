@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script>
+        var currentSite = 'linkimprint';
+        function addHeaderStyling(){
+            console.log('Wird ausgeführt');
+            document.getElementById(currentSite).classList.add('links-styled');
+        }
+    </script>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="includeHTML()">
+    <div class="header" w3-include-html="header.html">
+    </div>
+    <div class="padding">
+        <h1>Impressum</h1>
+        <h2>Angaben gemäß § 5 TMG:</h2>
+        <p><br>Software-Engineer<br>Tim Kempkens, Norman Rahmel, Raphael Konopatzki</p>
+        <h3>Postanschrift:</h3>
+        <p>Am Siechweiher 9A<br>91126 Schwabach<br></p>
+        <h3>Kontakt:</h3>
+        <p>Telefon: 01787282465<br>E-Mail: rahmelnorman@gmail.com</p>
+        <p></p>
+        <h3>Vertreten durch:</h3>
+        <p>Norman Rahmel
+            <br>Tim Kempkens
+            <br>Raphael Konopatzki<br></p>
+        <p></p>
+        <p><br></p>
+        <p></p>
+        <h2>Hinweise zur Website</h2>
+        <p></p>
+        <h3>Urheberrechtliche Hinweise</h3>
+        <p>Created my free logo at <a href="https://logomakr.com" target="_blank">LogoMakr.com</a>
+            <br>
+            <br>
+            <br>
+            <br>The icons are provided by <a href="https://fontawesome.com/" rel="nofollow" target="_blank">FontAwesome</a> unter the <a href="https://fontawesome.com/license" target="_blank" rel="nofollow">Creative Commons Attribution 4.0 International license</a>.<br></p>
+        <p></p>
+        <h2>Information gemäß § 36 VSBG</h2>
+        <p>Gemäß § 36 VSBG (Verbraucherstreitbeilegungsgesetz – Gesetz über die alternative Streitbeilegung in Verbrauchersachen) erklärt der Betreiber dieser Website:</p>
+        <p>Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        <p></p>
+        <p><em>Das Impressum wurde mit dem <a href="https://www.activemind.de/datenschutz/impressums-generator/">Impressums-Generator der activeMind AG</a> erstellt.</em></p>
+    </div>
+
+    <div class="footer" w3-include-html="footer.html"></div>
+</body>
+
+</html>

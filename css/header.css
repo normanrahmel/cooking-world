@@ -1,0 +1,53 @@
+.header {
+    position: relative;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    gap: 16px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links-styled {
+    /* content: " - Remember this"; */
+    border-bottom: 2px solid green;
+    font-weight: 700;
+    color: green !important;
+}
+
+.links-styled a:hover {
+    color: rgb(100, 136, 100) !important;
+}
+
+.links a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width: 500px) {
+    .hide-500 {
+        display: none;
+    }
+}
+
+@media(max-width: 460px) {
+    .logo-460 {
+        height: 90px;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+}
